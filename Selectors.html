@@ -1,0 +1,72 @@
+<html>
+    <Head>
+<title>Learning Jquery</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+h1{
+    color:yellowgreen ;
+    text-align:center ;
+ 
+}
+</style>
+<body>
+
+    <h1><i>My First Jquery Page</i></h1>
+    <p text-align:center><b><i>Jquery Learning tutorial</i></b></p>
+    <p id=box> This is to hide when u click the button</p>
+    <p>This is the second line of para</p>
+    <h3>learning material</h3>
+    <ol>
+        <li>Front End</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>Angular</li>
+    </ol>
+    <ol>
+        <li>Back End</li>
+        <li>C</li>
+        <li>Java</li>
+        <li>C++</li>
+    </ol>
+
+<a href="attribute" target="_blank"> Href Attribute of HTML </a><br>
+
+<a href="attribute"> Href Attribute of JavaScript</a><br>
+
+<a href="attribute"> Href Attribute of Jquery</a><br><br>   
+
+Enter<input type="text"><br>
+Gender<input type="radio">Male <input type="radio">Female<br>
+<button>Submit</button><br><br>
+
+
+
+<button>Click Me</button>
+</body>
+</Head>
+<script type="text/JavaScript">
+
+$(document).ready(function()
+{
+    console.log("Document is ready");
+alert("Document ready");
+});
+
+$(document).ready(function(){
+//$selector.action()
+$("button").click(function(){
+//$("#box").hide();
+//$(this).hide();
+//$("p:last").hide();
+//$("p:first").hide();
+//$("ol li:first-child").hide();
+//$("[href]").hide();
+//$("a[target='_blank']").hide();
+//$(":text").hide();
+$(":radio").hide();
+});
+
+});
+</script>
+</html>
+

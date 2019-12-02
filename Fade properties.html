@@ -1,0 +1,59 @@
+<html>
+    <Head>
+<title>Learning Jquery</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+h1{
+    color:yellowgreen ;
+    text-align:center ;
+
+ 
+}
+#box1{
+    height: 100px;width: 100px;background-color: rgb(13, 14, 12);margin: 20px;
+}
+
+#box2{
+    height: 100px;width: 100px;background-color: rgb(252, 0, 84);margin: 20px;
+}
+
+#box3{
+    height: 100px;width: 100px;background-color: rgb(55, 0, 252);margin: 20px;
+
+}
+
+
+</style>
+<body>
+
+    <h1><i>My First Jquery Page</i></h1>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+     
+    <button id="b1">box1</button>
+    <button id="b2">box2</button>
+    <button id="b3" >box3</button>
+</body>
+</Head>
+<script type="text/JavaScript">
+
+$(document).ready(function()
+{
+    console.log("Document is ready");
+alert("Document ready");
+});
+
+$(document).ready(function(){
+    $("#b1").click(function(){
+       $("#box1").fadeOut("slow");
+        // $("#box1").fadeIn("fast");
+        //$("#box2").fadeTo("slow",0.25);
+
+
+    });
+});
+
+</script>
+</html>
