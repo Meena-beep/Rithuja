@@ -55,7 +55,9 @@ alert("Document ready");
 $(document).ready(function(){
 //$selector.action()
 $("button").click(function(){
-//$("#box").hide();
+//using is visible
+    if($("#box").is(':visible')){
+$("#box").hide();
 //$(this).hide();
 //$("p:last").hide();
 //$("p:first").hide();
@@ -63,7 +65,11 @@ $("button").click(function(){
 //$("[href]").hide();
 //$("a[target='_blank']").hide();
 //$(":text").hide();
-$(":radio").hide();
+//$(":radio").hide();
+}
+else{
+$("#box").show();
+}
 });
 
 });
