@@ -1,0 +1,64 @@
+<html>
+    <Head>
+<title>Learning Jquery</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<body>
+
+    <h1><i>My First Jquery Page</i></h1>
+    <p> Hello world!!!</p>
+    <p class="intro">This is sample class!!!</p>  
+
+<div id="box1" style="border:1px solid black">
+     <p> Hello world!!!</p>
+     <p=class1>This is sample class!!!</p>  
+     <p=class2>This is sample class!!!</p>  
+     <p id="b1">This is sample para</p>
+     <p id="b2">Thanks!!!</p><br><br>
+      </div>
+
+      <div id="box2" style="border:1px solid black; padding:20px"; >
+     <p> This is first line to filter</p>
+     <p> This is second line to filter</p><br><br>
+
+      </div><br><br>
+
+
+  <button id="btn1">Click Me</button><br><br>
+</body>
+<script>                                                
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+
+     //$('#box1').children().css("background","pink");
+    // $("#b2").prev().css("background","pink");
+     //$('#b1').next().css("background","pink");
+    //$('#box1').parent().css("background","pink");
+    // $('#box1').parentsUntil($("p")).css({"background":"pink"});
+    //$('#box1').find('#b1').css({"background":"pink"});
+    //$('#box1').siblings().css({"background":"pink"});
+    //$('#box1').nextUntil($("p")).css({"background":"pink"});
+    //$('#box1').prevUntil($("p")).css({"background":"pink"});
+   
+    //$('#box1').nextAll($("p")).css({"background":"pink"});
+    $('#box1').prevAll($("button")).css({"background":"gray"});
+   $('#box1').first().css({"background":"pink"});
+     
+    $('#box2').last().css({"background":"yellow","padding":"10px"});
+     
+    $("p").eq(1).css({"background":"blue"});
+
+   // $("p").filter(".intro").css({"background":"red"});
+   $("p").not(".intro").css({"background":"red"});
+
+
+
+
+
+      })
+
+      
+
+    
+    });
+</script>
