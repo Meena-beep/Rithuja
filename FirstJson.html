@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Introduction of JSON and AJAX</title>
+    </head>
+<body>
+    <h2></b><i>Converting obj to string by JSON stringify </b></i></h2>
+    <p id="demo">This is sample para</p>
+</body>
+<script>
+var myObj={name:"Rithuja", age:1, city:"Trichy"};
+//myObj.name="shyam";
+myObj["name"]="shyam";
+//sending data to server
+var myJSON=JSON.stringify(myObj);
+document.getElementById("demo").innerHTML=myJSON;
+</script>
+</html>
